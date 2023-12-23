@@ -19,4 +19,12 @@ public class Storage : MonoBehaviour
         print(Ammount);
     }
 
+    public IEnumerator AutoAdd()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1f);
+            _ammount++;
+        }
+    }
 }
