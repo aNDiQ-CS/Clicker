@@ -378,6 +378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shop: {fileID: 1930544548}
+  _storage: {fileID: 903124229}
   _textAmmount: {fileID: 0}
   _textPrice: {fileID: 0}
   _ammount: 0
