@@ -11,6 +11,9 @@ public class Table : MonoBehaviour
     private Shop _shop;
 
     [SerializeField]
+    private Storage _storage;
+
+    [SerializeField]
     private TextMeshProUGUI _textAmmount, _textPrice;
 
     [SerializeField]
@@ -29,7 +32,10 @@ public class Table : MonoBehaviour
     {
         int currentMoney = _shop.GetAmmount();
         if (currentMoney >= _price)
+        {
             print("ÇÀ ÄÅÍÜÃÈ ÄÀ!");
+            _storage._additionPerSec += 1;
+        }
         else
             print("ÁÎÌÆ");
     }
