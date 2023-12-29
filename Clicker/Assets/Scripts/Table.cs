@@ -34,7 +34,7 @@ public class Table : MonoBehaviour
         if (currentMoney >= _price)
         {
             print("ÇÀ ÄÅÍÜÃÈ ÄÀ!");
-            StartCoroutine(_storage.AutoAdd());
+            _storage._additionPerSec += 1;
         }
         else
             print("ÁÎÌÆ");
