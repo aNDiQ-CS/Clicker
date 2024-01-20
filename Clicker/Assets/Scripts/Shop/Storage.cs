@@ -35,7 +35,7 @@ public class Storage : MonoBehaviour
     {
         _temp += _additionPerSec * Time.deltaTime;
         if (_temp >= 1) {
-            _ammount += (int)_temp;
+            Add((int)_temp);
             _temp = 0;
         }
     }
