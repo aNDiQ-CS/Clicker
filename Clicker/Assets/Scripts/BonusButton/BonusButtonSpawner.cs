@@ -7,6 +7,8 @@ public class BonusButtonSpawner : MonoBehaviour
     [SerializeField] private GameObject[] _buttonPrefabs;
     private float _spawnTime;
 
+    [SerializeField] private int _lifeTime = 5;
+
     private void Start()
     {
         StartCoroutine(ButtonSpawn());
@@ -20,7 +22,9 @@ public class BonusButtonSpawner : MonoBehaviour
             yield return new WaitForSeconds(_spawnTime);
             Vector3 position = new Vector3(Random.Range(-3.75f, -2f), Random.Range(-4f, 3.25f), 0f);
             GameObject newBonusButton = _buttonPrefabs[Random.Range(0, _buttonPrefabs.Length)];
-            Instantiate(newBonusButton, position, Quaternion.identity);
+            GameObject bonusGO = Instantiate(newBonusButton, position, Quaternion.identity);
+            yield return new WaitForSeconds(_lifeTime);
+            Destroy(bonusGO);
         }
     }
 }

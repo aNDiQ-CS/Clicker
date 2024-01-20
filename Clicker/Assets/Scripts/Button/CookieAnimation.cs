@@ -5,26 +5,27 @@ using UnityEngine;
 public class CookieAnimation : MonoBehaviour
 {
     [SerializeField]
+    Animator _animator;
+
+    [SerializeField]
     float _rotationSpeed = 5f;
 
     [SerializeField]
     float _scaleFactor = 0.5f;
 
-    bool _mouseOn = false;
-
     private void OnMouseOver()
     {
-        _mouseOn = true;
-        Scale();
+        _animator.SetBool("OnMouseHover", true);        
     }
 
-    private void Scale()
+    private void OnMouseExit()
     {
-
+        _animator.SetBool("OnMouseHover", false);
     }
 
     void Update()
-    {        
-        transform.Rotate(Vector3.forward * _rotationSpeed * Time.deltaTime);
+    {
+        
+        transform.Rotate(Vector3.forward * _rotationSpeed * Time.deltaTime);        
     }
 }
