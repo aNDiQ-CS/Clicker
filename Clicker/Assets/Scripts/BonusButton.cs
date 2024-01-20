@@ -7,7 +7,7 @@ public class BonusButton : MonoBehaviour
 {
     [SerializeField] private int _bonus;
 
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
         EventHandler.OnBonusButtonClicked(_bonus);
         Destroy(gameObject);
