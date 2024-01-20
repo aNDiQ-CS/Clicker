@@ -9,11 +9,6 @@ public class Shop : MonoBehaviour
 
     List<Table> tables = new List<Table>();
 
-    private void Start()
-    {
-        
-    }
-
     public int GetAmmount()
     {
         return _storage.Ammount;

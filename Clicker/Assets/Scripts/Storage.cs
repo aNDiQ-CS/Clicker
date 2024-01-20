@@ -5,8 +5,6 @@ using System;
 using System.Data.SqlTypes;
 using UnityEditor;
 
-
-
 public class Storage : MonoBehaviour
 {
     private int _ammount;
@@ -19,6 +17,7 @@ public class Storage : MonoBehaviour
     private void Start()
     {
         _ammount = 0;
+        EventHandler.BonusButtonCollected += Add;
     }
 
     private void Update()
