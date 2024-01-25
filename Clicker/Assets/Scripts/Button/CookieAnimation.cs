@@ -25,7 +25,6 @@ public class CookieAnimation : MonoBehaviour
 
     void Update()
     {
-        
         transform.Rotate(Vector3.forward * _rotationSpeed * Time.deltaTime);        
     }
 }
