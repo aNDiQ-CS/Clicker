@@ -784,7 +784,6 @@ MonoBehaviour:
   - {fileID: 6579905116441252303, guid: 816269de59175fd4ab6c8498e359ded3, type: 3}
   - {fileID: 4243693142768728063, guid: 32dfb243d40ab004daea8f50045adb2e, type: 3}
   - {fileID: 8398214224285271499, guid: fdc48e5b56d2e4b4182992f363f8dfac, type: 3}
-  _lifeTime: 5
 --- !u!4 &1481496196
 Transform:
   m_ObjectHideFlags: 0

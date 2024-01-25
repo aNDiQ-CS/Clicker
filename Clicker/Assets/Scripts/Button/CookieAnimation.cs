@@ -23,6 +23,11 @@ public class CookieAnimation : MonoBehaviour
         _animator.SetBool("OnMouseHover", false);
     }
 
+    private void OnMouseDown()
+    {
+        _animator.SetTrigger("OnMouseClicked");
+    }
+
     void Update()
     {
         transform.Rotate(Vector3.forward * _rotationSpeed * Time.deltaTime);        
