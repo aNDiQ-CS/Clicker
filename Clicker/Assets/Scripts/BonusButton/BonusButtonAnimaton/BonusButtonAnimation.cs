@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BonusButtonAnimation : MonoBehaviour
 {
-    [SerializeField] Animator _animator;
+    [SerializeField] private Animator _animator;
     private int lifeTime;
 
     private void Start()

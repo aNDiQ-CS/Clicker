@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7688378510922517406
+--- !u!1001 &5687145020581919814
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,15 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 577657638078495410, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
       propertyPath: m_Name
-      value: GoldenButton
+      value: SilverButton
       objectReference: {fileID: 0}
     - target: {fileID: 577657638078495411, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 85cb43aa35fd49b4d881c5c40a958e4b, type: 3}
+    - target: {fileID: 577657638078495411, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
       propertyPath: m_Color.b
-      value: 0.29803923
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577657638078495411, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577657638078495411, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
       propertyPath: m_Color.r
@@ -69,7 +73,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3092692014657124584, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
       propertyPath: _bonus
-      value: 75
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058833646466048681, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058833646466048681, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
