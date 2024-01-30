@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private Storage _storage;
 
+    [SerializeField] private Clicker _clicker;
+
     public void SpawnYoutuber(Youtuber _youtuber)
     {
         GameObject youtuberPrefab = _youtubersPrefabs[(int)_youtuber];
@@ -22,6 +24,7 @@ public class Inventory : MonoBehaviour
                 _storage._additionPerSec += 1;
                 break;
             case Youtuber.MrBeast:
+                _clicker._addingAmount += 1;
                 break;
         }
     }
