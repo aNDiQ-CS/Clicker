@@ -7,20 +7,19 @@ using UnityEngine.UI;
 
 public class Table : MonoBehaviour
 {
-    [SerializeField]
-    private Shop _shop;
+    [SerializeField] private Shop _shop;
 
-    [SerializeField]
-    private Storage _storage;
+    [SerializeField] private Storage _storage;
 
-    [SerializeField]
-    private TextMeshProUGUI _textAmmount, _textPrice;
+    [SerializeField] private Inventory _inventory;
 
-    [SerializeField]
-    private int _ammount, _price;
+    [SerializeField] private TextMeshProUGUI _textAmmount, _textPrice;
 
-    [SerializeField]
-    private Button _buyButton;
+    [SerializeField] private int _ammount, _price;
+
+    [SerializeField] private Button _buyButton;
+
+    [SerializeField] private Inventory.Youtuber _youtuber;
     
     public Table(int a, int p)
     {
@@ -34,7 +33,7 @@ public class Table : MonoBehaviour
         if (currentMoney >= _price)
         {
             print("ÇÀ ÄÅÍÜÃÈ ÄÀ!");
-            _storage._additionPerSec += 1;
+            _inventory.SpawnYoutuber(_youtuber);
         }
         else
             print("ÁÎÌÆ");
