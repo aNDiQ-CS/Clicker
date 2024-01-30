@@ -28,8 +28,7 @@ public class BonusButtonSpawner : MonoBehaviour
             Vector3 position = new Vector3(Random.Range(-8.5f, 4f), Random.Range(-2f, -4f), 0f);
             GameObject newBonusButtonIndex = _buttonPrefabs[Random.Range(0, _buttonPrefabs.Length)];
             GameObject bonusGO = Instantiate(newBonusButtonIndex, position, Quaternion.identity);
-            yield return new WaitForSeconds(_lifeTime);
-            Destroy(bonusGO);
+            Destroy(bonusGO, _lifeTime);
         }
     }
 }
