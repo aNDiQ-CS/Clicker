@@ -12,13 +12,6 @@ public class L6 : MonoBehaviour
         isVisible = !isVisible;
         popup.gameObject.SetActive(isVisible);
         popup.SetAsLastSibling();
-        
-
-
     }
-
-
-
-
 
 }

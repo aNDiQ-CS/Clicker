@@ -397,6 +397,17 @@ MonoBehaviour:
   _price: 0
   _buyButton: {fileID: 41739331}
   _youtuber: 0
+--- !u!114 &234026291 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2367768059004755483, guid: 19b7590bd78873f47aa62a9eb79b564a, type: 3}
+  m_PrefabInstance: {fileID: 2367768059610117321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73975abd87b550146b2b91c073874ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,10 +521,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df62a40c787432c41937541441688a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _storage: {fileID: 903124229}
+  _clicker: {fileID: 234026291}
+  _bonusButtonSpawner: {fileID: 1481496195}
   _youtubersPrefabs:
   - {fileID: 6916882881976369684, guid: c8d09187e7cbe9c4daf3827904c12bcc, type: 3}
   - {fileID: 9147660935510128818, guid: 4be7a4bde74fd664484653435e1afa27, type: 3}
-  _storage: {fileID: 903124229}
+  _equipmentPrefabs: []
+  _bonusButton: {fileID: -7852225719859904057, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
 --- !u!4 &620039837
 Transform:
   m_ObjectHideFlags: 0
@@ -858,9 +873,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonPrefabs:
-  - {fileID: 577657638078495410, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
-  - {fileID: 7113113501588861228, guid: bffc2a47a8989e44982bb02cd949c1b1, type: 3}
   - {fileID: 5109488585566783220, guid: 4f121e4367818ef448d225973e8020d8, type: 3}
+  - {fileID: 7113113501588861228, guid: bffc2a47a8989e44982bb02cd949c1b1, type: 3}
+  - {fileID: 63912879980065899, guid: 49f44e41af98e8e469300339b074fc00, type: 3}
+  _usingButtonLastIndex: 0
+  _minSpawnTime: 2
+  _maxSpawnTime: 4
 --- !u!4 &1481496196
 Transform:
   m_ObjectHideFlags: 0
@@ -1356,7 +1374,7 @@ PrefabInstance:
     - target: {fileID: 2054989055891212923, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2033463681}
+      objectReference: {fileID: 2033463685}
     - target: {fileID: 2054989055891212923, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1703,7 +1721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
---- !u!114 &2033463681
+--- !u!114 &2033463685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1932,6 +1950,10 @@ PrefabInstance:
       propertyPath: _storage
       value: 
       objectReference: {fileID: 903124229}
+    - target: {fileID: 2367768059004755483, guid: 19b7590bd78873f47aa62a9eb79b564a, type: 3}
+      propertyPath: _addingAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2367768059004755485, guid: 19b7590bd78873f47aa62a9eb79b564a, type: 3}
       propertyPath: m_RootOrder
       value: 1

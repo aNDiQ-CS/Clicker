@@ -83,5 +83,24 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.61
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7852225719859904057, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
+--- !u!1 &7113113501588861228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 577657638078495410, guid: 67364ce8415a5364cb5950771c1bf8ba, type: 3}
+  m_PrefabInstance: {fileID: 7688378510922517406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6697595178696406465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7113113501588861228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed653ecd09bdd446ad915abda10bdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bonus: 50
