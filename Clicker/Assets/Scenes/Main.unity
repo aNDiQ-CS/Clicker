@@ -396,7 +396,6 @@ MonoBehaviour:
   _ammount: 0
   _price: 0
   _buyButton: {fileID: 41739331}
-  _youtuber: 0
 --- !u!114 &234026291 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2367768059004755483, guid: 19b7590bd78873f47aa62a9eb79b564a, type: 3}
@@ -1646,7 +1645,7 @@ PrefabInstance:
     - target: {fileID: 2054989057240309005, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2067685877}
+      objectReference: {fileID: 2067685875}
     - target: {fileID: 2054989057240309005, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1657,7 +1656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2054989057240309005, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Table, Assembly-CSharp
+      value: YoutuberTable, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2054989057240309005, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1741,7 +1740,6 @@ MonoBehaviour:
   _ammount: 0
   _price: 0
   _buyButton: {fileID: 202281185}
-  _youtuber: 1
 --- !u!1 &2037327505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2054989056224145919, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
@@ -1765,7 +1763,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2054989055915429283, guid: f2a337ccc219a50488a09b0aa0f71ac9, type: 3}
   m_PrefabInstance: {fileID: 2033463679}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2067685877
+--- !u!114 &2067685875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1774,7 +1772,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067685873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a20980edd649e6e4c83b3855ebdabe3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2736ad75a13a936449e224ee0075d547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _shop: {fileID: 2037327508}
