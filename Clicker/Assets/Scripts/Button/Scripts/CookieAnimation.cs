@@ -5,13 +5,13 @@ using UnityEngine;
 public class CookieAnimation : MonoBehaviour
 {
     [SerializeField]
-    Animator _animator;
+    private Animator _animator;
 
     [SerializeField]
-    float _rotationSpeed = 5f;
+    private float _rotationSpeed = 5f;
 
     [SerializeField]
-    float _scaleFactor = 0.5f;
+    private float _scaleFactor = 0.5f;
 
     private void OnMouseOver()
     {
@@ -28,7 +28,7 @@ public class CookieAnimation : MonoBehaviour
         _animator.SetTrigger("OnMouseClicked");
     }
 
-    void Update()
+    private void Update()
     {
         transform.Rotate(Vector3.forward * _rotationSpeed * Time.deltaTime);        
     }

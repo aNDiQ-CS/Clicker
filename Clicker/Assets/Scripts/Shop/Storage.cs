@@ -10,7 +10,7 @@ public class Storage : MonoBehaviour
     private int _ammount;
     public int _additionPerSec;
 
-    float _temp;
+    private float _temp;
 
     public int Ammount => _ammount;
 
@@ -34,7 +34,8 @@ public class Storage : MonoBehaviour
     private void AddPerTick()
     {
         _temp += _additionPerSec * Time.deltaTime;
-        if (_temp >= 1) {
+        if (_temp >= 1) 
+        {
             Add((int)_temp);
             _temp = 0;
         }
